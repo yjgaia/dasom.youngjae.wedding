@@ -6,7 +6,7 @@ BOOT({
 		
 		defaultBoxName : 'DYWedding',
 		title : 'Dasom & YoungJae Wedding',
-		webServerPort : 0404
+		webServerPort : 8404
 	},
 	
 	BROWSER_CONFIG : {
