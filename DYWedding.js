@@ -18,8 +18,6 @@ BOOT({
 	},
 
 	NODE_CONFIG : {
-		isSingleCoreMode : true,
-		
-		dbName : 'DYWedding'
+		isSingleCoreMode : true
 	}
 });

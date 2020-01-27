@@ -22,6 +22,25 @@ DYWedding.Home = CLASS({
 	
 	init : (inner, self) => {
 		
-		self.append('안녕하십니까?');
+		self.append(P({
+			style : {
+				padding : '15px 20px',
+				fontFamily : 'Philosopher',
+				color : '#000',
+				fontSize : 30,
+				background : 'rgba(255, 255, 255, 0.8)'
+			},
+			c : [
+				SPAN({
+					c : 'DASOM\nYOUNGJAE\nWEDDING\n'
+				}),
+				SPAN({
+					style : {
+						fontSize : 16
+					},
+					c : '2020 0404'
+				})
+			]
+		}));
 	}
 });
