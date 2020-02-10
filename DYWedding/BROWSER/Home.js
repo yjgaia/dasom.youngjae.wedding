@@ -8,10 +8,17 @@ DYWedding.Home = CLASS({
 		return {
 			style : {
 				onDisplayResize : (width, height) => {
-					return {
-						width : width,
-						height : height
-					};
+					if (width > 800) {
+						return {
+							width : 'auto',
+							height : 'auto'
+						};
+					} else {
+						return {
+							width : width,
+							height : height
+						};
+					}
 				},
 				backgroundImage : DYWedding.R('photo/main.jpg'),
 				backgroundSize : 'cover',

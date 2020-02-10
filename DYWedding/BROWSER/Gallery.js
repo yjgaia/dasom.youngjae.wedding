@@ -8,9 +8,15 @@ DYWedding.Gallery = CLASS({
 		return {
 			style : {
 				onDisplayResize : (width, height) => {
-					return {
-						width : width
-					};
+					if (width > 800) {
+						return {
+							width : 'auto'
+						};
+					} else {
+						return {
+							width : width
+						};
+					}
 				},
 				backgroundColor : '#fff',
 				color : '#000'
