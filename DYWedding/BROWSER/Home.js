@@ -11,7 +11,7 @@ DYWedding.Home = CLASS({
 					if (width > 800) {
 						return {
 							width : 'auto',
-							height : 'auto'
+							height : 741
 						};
 					} else {
 						return {
@@ -20,7 +20,7 @@ DYWedding.Home = CLASS({
 						};
 					}
 				},
-				backgroundImage : DYWedding.R('photo/main.jpg'),
+				backgroundImage : DYWedding.R('photo/4.jpg'),
 				backgroundSize : 'cover',
 				backgroundPosition : 'center center'
 			}
