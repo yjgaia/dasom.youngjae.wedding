@@ -31,7 +31,7 @@ DYWedding.Gallery = CLASS({
 			style : {
 				backgroundColor : '#0a4f56',
 				lineHeight : 0,
-				paddingBottom : 20
+				padding : 6
 			},
 			c : RUN(() => {
 
@@ -43,9 +43,8 @@ DYWedding.Gallery = CLASS({
 						href : DYWedding.R('photo/' + (index + 1) + '.jpg'),
 						c : IMG({
 							style : {
-								marginTop : 20,
-								marginLeft : 20,
-								width : 'calc(33% - 26px)'
+								width : 'calc(33% - 2px)',
+								transform : 'scale(0.8)'
 							},
 							src: DYWedding.R('photo/thumb/' + (index + 1) + '.png')
 						})
