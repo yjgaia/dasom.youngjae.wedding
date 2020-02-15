@@ -10,11 +10,13 @@ DYWedding.Game = CLASS({
 				onDisplayResize : (width, height) => {
 					if (width > 800) {
 						return {
-							width : 'auto'
+							width : 'auto',
+							height : 741
 						};
 					} else {
 						return {
-							width : width
+							width : width,
+							height : height
 						};
 					}
 				},
@@ -26,12 +28,25 @@ DYWedding.Game = CLASS({
 	
 	init : (inner, self) => {
 		
-		self.append(DIV({
-			c : [
-				H3({
-					c : '게임하기'
+		self.on('show', () => {
+			
+			let subScreen;
+			
+			self.append(DIV({
+				style : {
+					backgroundColor : '#b0e1fa',
+					onDisplayResize : () => {
+						subScreen.setSize({
+							width : self.getWidth(),
+							height : self.getHeight()
+						});
+					}
+				},
+				c : subScreen = SkyEngine.SubScreen({
+					width : self.getWidth(),
+					height : self.getHeight()
 				})
-			]
-		}));
+			}));
+		});
 	}
 });

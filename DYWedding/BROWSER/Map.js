@@ -79,10 +79,33 @@ DYWedding.Map = CLASS({
 					c : [
 					A({
 						style : {
+							marginTop : 5,
+							marginLeft : 5,
 							float : 'left',
-							fontSize : 20
+							padding : 4,
+							border : '1px solid #ccc',
+							borderRadius : 10
 						},
-						c : '카카오 네비',
+						c : [
+							IMG({
+								style : {
+									flt : 'left',
+									width : 30,
+									borderRadius : 10
+								},
+								src : DYWedding.R('kakaonavi.png')
+							}),
+							SPAN({
+								style : {
+									flt : 'left',
+									marginLeft : 8,
+									marginTop : 6,
+									paddingRight: 4,
+									color : '#333'
+								},
+								c : '카카오 네비'
+							})
+						],
 						on : {
 							tap : () => {
 								Kakao.Navi.start({
@@ -97,12 +120,35 @@ DYWedding.Map = CLASS({
 					
 					A({
 						style : {
+							marginTop : 5,
+							marginRight : 5,
 							float : 'right',
-							fontSize : 20
+							padding : 4,
+							border : '1px solid #ccc',
+							borderRadius : 10
 						},
 						href : 'https://map.naver.com/v5/search/%ED%99%80%EB%A6%AC%EB%8D%B0%EC%9D%B4%EC%9D%B8%EA%B4%91%EC%A3%BC/place/19560475?c=14119514.1500732,4183961.0868027,18,0,0,0,dh',
 						target : '_blank',
-						c : '지도 보기'
+						c : [
+							IMG({
+								style : {
+									flt : 'left',
+									width : 30,
+									borderRadius : 10
+								},
+								src : DYWedding.R('navermap.png')
+							}),
+							SPAN({
+								style : {
+									flt : 'left',
+									marginLeft : 8,
+									marginTop : 6,
+									paddingRight: 4,
+									color : '#333'
+								},
+								c : '지도 보기'
+							})
+						]
 					}),
 					
 					CLEAR_BOTH()]
@@ -181,7 +227,8 @@ DYWedding.Map = CLASS({
 			});
 			
 			new kakao.maps.Marker({
-				position : new kakao.maps.LatLng(35.1477065, 126.8381013)
+				position : new kakao.maps.LatLng(35.1477065, 126.8381013),
+				image : new kakao.maps.MarkerImage(DYWedding.R('marker.png'), new kakao.maps.Size(50, 50))
 			}).setMap(map);
 		});
 	}

@@ -12,8 +12,7 @@ BOOT({
 	BROWSER_CONFIG : {
 		SkyEngine : {
 			isDebugMode : true,
-			minWidth : 720,
-			height : 1280
+			isNotUsingScreen : true
 		}
 	},
 
