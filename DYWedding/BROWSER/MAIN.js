@@ -80,8 +80,7 @@ DYWedding.MAIN = METHOD({
 									DYWedding.Home(),
 									DYWedding.Invitation(),
 									DYWedding.Gallery(),
-									DYWedding.Map(),
-									DYWedding.Game()
+									DYWedding.Map()
 								]
 							})
 						})

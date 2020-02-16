@@ -9,13 +9,6 @@ BOOT({
 		webServerPort : 8404
 	},
 	
-	BROWSER_CONFIG : {
-		SkyEngine : {
-			isDebugMode : true,
-			isNotUsingScreen : true
-		}
-	},
-
 	NODE_CONFIG : {
 		isSingleCoreMode : true
 	}
