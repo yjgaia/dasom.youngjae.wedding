@@ -46,7 +46,7 @@ DYWedding.Gallery = CLASS({
 								width : 'calc(33% - 2px)',
 								transform : 'scale(0.8)'
 							},
-							src: DYWedding.R('photo/thumb/' + (index + 1) + '.png')
+							src: DYWedding.R('photo/thumb/' + (index + 1) + '.jpg')
 						})
 					}));
 					
