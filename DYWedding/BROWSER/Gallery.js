@@ -29,7 +29,7 @@ DYWedding.Gallery = CLASS({
 		let wrapper;
 		self.append(wrapper = DIV({
 			style : {
-				backgroundColor : '#0a4f56',
+				backgroundColor : '#163a2c',
 				lineHeight : 0,
 				padding : 6
 			},

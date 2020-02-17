@@ -20,34 +20,62 @@ DYWedding.Home = CLASS({
 						};
 					}
 				},
-				backgroundImage : DYWedding.R('photo/4.jpg'),
-				backgroundSize : 'cover',
-				backgroundPosition : 'center center'
+				backgroundColor : '#163a2c'
 			}
 		};
 	},
 	
 	init : (inner, self) => {
 		
-		self.append(P({
+		self.append(DIV({
 			style : {
-				padding : '15px 20px',
+				width : 'calc(100% - 200px)',
+				height : 'calc(100% - 200px)',
+				border : '100px solid',
+				borderImage : 'url(' + DYWedding.R('mainframe.png') + ') 250 / 100px round'
+			}
+		}));
+		
+		self.append(DIV({
+			style : {
+				position : 'absolute',
+				left : '50%',
+				top : 50,
+				width : 250,
+				marginLeft : -125,
 				fontFamily : 'Philosopher',
-				color : '#000',
-				fontSize : 30,
-				background : 'rgba(255, 255, 255, 0.8)'
+				textAlign : 'center',
+				fontSize : 25
 			},
-			c : [
-				SPAN({
-					c : 'DASOM\nYOUNGJAE\nWEDDING\n'
-				}),
-				SPAN({
-					style : {
-						fontSize : 16
-					},
-					c : '2020 0404'
-				})
-			]
+			c : 'The Love Story'
+		}));
+		
+		self.append(DIV({
+			style : {
+				position : 'absolute',
+				left : '50%',
+				top : '50%',
+				width : 250,
+				marginLeft : -125,
+				height : 350,
+				marginTop : -175,
+				backgroundImage : DYWedding.R('photo/4.jpg'),
+				backgroundSize : 'cover',
+				backgroundPosition : 'center center'
+			}
+		}));
+		
+		self.append(DIV({
+			style : {
+				position : 'absolute',
+				left : '50%',
+				bottom : 50,
+				width : 250,
+				marginLeft : -125,
+				fontFamily : 'Philosopher',
+				textAlign : 'center'
+			},
+			c : 'Saturday, The fourth of April, 2020\nHoliday inn Gwangju hotel, 3F'
 		}));
 	}
 });
