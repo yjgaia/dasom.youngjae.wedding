@@ -7,6 +7,7 @@ DYWedding.Home = CLASS({
 	params : () => {
 		return {
 			style : {
+				position : 'relative',
 				onDisplayResize : (width, height) => {
 					if (width > 800) {
 						return {
@@ -75,7 +76,7 @@ DYWedding.Home = CLASS({
 				fontFamily : 'Philosopher',
 				textAlign : 'center'
 			},
-			c : 'Saturday, The fourth of April, 2020\nHoliday inn Gwangju hotel, 3F'
+			c : 'Saturday, 16th of May, 2020\nHoliday inn Gwangju hotel, 3F'
 		}));
 	}
 });

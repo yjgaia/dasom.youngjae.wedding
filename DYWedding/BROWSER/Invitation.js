@@ -94,7 +94,7 @@ DYWedding.Invitation = CLASS({
 						lineHeight : '2em'
 					},
 					c : [SPAN({
-						c : '2020년 4월 4일 토요일 오후 1시\n홀리데이 인 광주 3층 컨벤션홀'
+						c : '2020년 5월 16일 토요일 오후 1시\n홀리데이 인 광주 3층 컨벤션홀'
 					})]
 				})
 			]
