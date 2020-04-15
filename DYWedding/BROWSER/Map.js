@@ -14,13 +14,13 @@ DYWedding.Map = CLASS({
 						};
 					} else {
 						return {
-							width : width
+							width : width - 40
 						};
 					}
 				},
-				backgroundColor : '#fff',
+				backgroundColor : '#163a2c',
 				color : '#000',
-				padding : '80px 0'
+				padding : '20px'
 			}
 		};
 	},
@@ -29,12 +29,16 @@ DYWedding.Map = CLASS({
 		
 		let mapWrapper;
 		self.append(DIV({
+			style : {
+				backgroundColor : '#ffffff',
+				padding : '50px 0'
+			},
 			c : [
 				
 				H2({
 					style : {
 						textAlign : 'center',
-						fontSize : 30
+						fontSize : 28
 					},
 					c : '오시는 길'
 				}),
@@ -43,7 +47,7 @@ DYWedding.Map = CLASS({
 					style : {
 						marginTop : 20,
 						textAlign : 'center',
-						fontSize : 16
+						fontSize : 15
 					},
 					c : [P({
 						style : {

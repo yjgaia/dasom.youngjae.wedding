@@ -59,6 +59,7 @@ DYWedding.MAIN = METHOD({
 							
 							c : DIV({
 								style : {
+									position : 'relative',
 									onDisplayResize : (width, height) => {
 										if (width > 800) {
 											return {
@@ -74,13 +75,31 @@ DYWedding.MAIN = METHOD({
 												'-webkit-mask-image': 'none'
 											};
 										}
-									}
+									},
+									backgroundColor : '#163a2c'
 								},
 								c : [
 									DYWedding.Home(),
 									DYWedding.Invitation(),
 									DYWedding.Gallery(),
-									DYWedding.Map()
+									DYWedding.Map(),
+									DIV({
+										style : {
+											padding : '40px 40px 60px 40px',
+											color : '#3CB68A'
+										},
+										c : DIV({
+											c : [P({
+												c : '코로나 바이러스 위험에 대비하여,\n호텔 내 방역에 더욱 신경 쓸 예정입니다.'
+											}), P({
+												style : {
+													marginTop : 10,
+													fontSize : 12
+												},
+												c : '* 넓은 좌석 배치 및 코스식 식사가 제공됩니다.'
+											})]
+										})
+									})
 								]
 							})
 						})
