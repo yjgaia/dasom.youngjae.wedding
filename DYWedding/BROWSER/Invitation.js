@@ -60,7 +60,7 @@ DYWedding.Invitation = CLASS({
 				}),*/
 				DIV({
 					style : {
-						marginTop : 20
+						marginTop : 50
 					},
 					c : AUDIO({
 						mp3 : DYWedding.R('music.mp3')
