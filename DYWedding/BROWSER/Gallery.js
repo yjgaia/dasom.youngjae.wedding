@@ -19,13 +19,36 @@ DYWedding.Gallery = CLASS({
 					}
 				},
 				backgroundColor : '#163a2c',
-				color : '#000',
+				color : '#fff',
 				padding : '50px 0'
 			}
 		};
 	},
 	
 	init : (inner, self) => {
+		
+		self.append(DIV({
+			style : {
+				fontSize : 16,
+				textAlign : 'center'
+			},
+			c : [
+				DIV({
+					c : AUDIO({
+						mp3 : DYWedding.R('music.mp3')
+					})
+				}),
+				P({
+					style : {
+						padding : '50px 0',
+						lineHeight : '2em',
+						fontSize : 16,
+						fontFamily : 'Nanum Myeongjo'
+					},
+					c : '다솜과 영재가 함께하는 여덟번째 봄,\n사랑을 약속합니다.'
+				})
+			]
+		}));
 		
 		let wrapper;
 		self.append(DIV({

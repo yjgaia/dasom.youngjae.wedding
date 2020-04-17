@@ -32,48 +32,6 @@ DYWedding.Invitation = CLASS({
 				textAlign : 'center'
 			},
 			c : [
-				/*DIV({
-					style : {
-						padding : '0 20px'
-					},
-					c : DIV({
-						style : {
-							backgroundColor : '#FEF9E5',
-							border : '1px solid #F5C810',
-							color : '#755C11',
-							padding : '15px 0',
-							borderRadius : 20
-						},
-						c : [H3({
-							style : {
-								fontWeight : 'bold'
-							},
-							c : '안내사항'
-						}), P({
-							style : {
-								marginTop : 15,
-								fontSize : 14
-							},
-							c : '코로나 위험으로\n호텔내 방역에 신경쓰고 있으며,\n좌석 배치를 넓게하고\n식사는 코스식으로 진행됩니다.'
-						})]
-					})
-				}),*/
-				DIV({
-					style : {
-						marginTop : 50
-					},
-					c : AUDIO({
-						mp3 : DYWedding.R('music.mp3')
-					})
-				}),
-				P({
-					style : {
-						padding : '50px 0',
-						lineHeight : '2em',
-						fontSize : 18
-					},
-					c : '다솜과 영재가 함께하는 여덟번째 봄,\n사랑을 약속합니다.'
-				}),
 				DIV({
 					style : {
 						padding : '30px 0',

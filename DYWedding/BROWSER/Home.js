@@ -30,53 +30,88 @@ DYWedding.Home = CLASS({
 		
 		self.append(DIV({
 			style : {
-				width : 'calc(100% - 200px)',
-				height : 'calc(100% - 200px)',
-				border : '100px solid',
-				borderImage : 'url(' + DYWedding.R('mainframe.png') + ') 250 / 100px round'
+				width : '100%',
+				height : '100%'
 			}
 		}));
 		
-		self.append(DIV({
+		self.append(IMG({
 			style : {
 				position : 'absolute',
-				left : '50%',
-				top : 50,
-				width : 250,
-				marginLeft : -125,
-				fontFamily : 'Philosopher',
-				textAlign : 'center',
-				fontSize : 25
+				left : '10%',
+				top : 0,
+				width : '80%'
 			},
-			c : 'The Love Story'
+			src : DYWedding.R('topframe.png')
+		}));
+		
+		self.append(IMG({
+			style : {
+				position : 'absolute',
+				left : '10%',
+				bottom : 0,
+				width : '80%',
+				transform : 'scaleY(-1)'
+			},
+			src : DYWedding.R('topframe.png')
+		}));
+		
+		self.append(TABLE({
+			style : {
+				position : 'absolute',
+				left : 0,
+				top : 10,
+				width : '100%',
+				height : '20%',
+				fontFamily : 'Nanum Myeongjo',
+				fontWeight : 800,
+				textAlign : 'center'
+			},
+			c : TR({
+				c : TD({
+					c : [DIV({
+						style : {
+							paddingTop : 5,
+							fontFamily : 'Classical',
+							textAlign : 'center',
+							fontSize : 40
+						},
+						c : 'Dasom & Youngjae'
+					})]
+				})
+			})
 		}));
 		
 		self.append(DIV({
 			style : {
 				position : 'absolute',
-				left : '50%',
-				top : '50%',
-				width : 250,
-				marginLeft : -125,
-				height : 350,
-				marginTop : -175,
+				left : '10%',
+				top : '20%',
+				width : '80%',
+				height : '60%',
 				backgroundImage : DYWedding.R('main.jpg'),
 				backgroundSize : 'cover',
 				backgroundPosition : 'center center'
 			}
 		}));
 		
-		self.append(DIV({
+		self.append(TABLE({
 			style : {
 				position : 'absolute',
-				left : '50%',
-				bottom : 50,
-				width : 250,
-				marginLeft : -125,
-				fontFamily : 'Philosopher',
-				textAlign : 'center'
+				left : 0,
+				bottom : 5,
+				width : '100%',
+				height : '20%',
+				fontFamily : 'Nanum Myeongjo',
+				fontWeight : 400,
+				textAlign : 'center',
+				fontSize : 12
 			},
-			c : 'Saturday, 16th of May, 2020\nHoliday inn Gwangju hotel, 3F'
+			c : TR({
+				c : TD({
+					c : 'Saturday, 16th of May, 2020\nHoliday inn Gwangju hotel, 3F'
+				})
+			})
 		}));
 	}
 });

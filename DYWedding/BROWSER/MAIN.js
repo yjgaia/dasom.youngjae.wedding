@@ -80,8 +80,8 @@ DYWedding.MAIN = METHOD({
 								},
 								c : [
 									DYWedding.Home(),
-									DYWedding.Invitation(),
 									DYWedding.Gallery(),
+									DYWedding.Invitation(),
 									DYWedding.Map(),
 									DIV({
 										style : {
