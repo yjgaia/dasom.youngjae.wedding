@@ -109,7 +109,7 @@ DYWedding.Home = CLASS({
 			},
 			c : TR({
 				c : TD({
-					c : 'Saturday, 16th of May, 2020\nHoliday inn Gwangju hotel, 3F'
+					c : 'Saturday, 16th of May, 2020\n1 o\'clock in the afternoon.\nHoliday inn Gwangju hotel, 3F'
 				})
 			})
 		}));

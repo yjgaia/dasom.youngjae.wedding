@@ -142,32 +142,6 @@ DYWedding.Gallery = CLASS({
 							left : 80,
 							top : 50
 						},
-						href : DYWedding.R('photo/3.jpg'),
-						c : IMG({
-							style : {
-								height : 100
-							},
-							src : DYWedding.R('photo/thumb/3.jpg')
-						})
-					}), image4 = A({
-						style : {
-							position : 'absolute',
-							right : 80,
-							top : 50
-						},
-						href : DYWedding.R('photo/5.jpg'),
-						c : IMG({
-							style : {
-								height : 100
-							},
-							src : DYWedding.R('photo/thumb/5.jpg')
-						})
-					}), image5 = A({
-						style : {
-							position : 'absolute',
-							left : 80,
-							top : 50
-						},
 						href : DYWedding.R('photo/1.jpg'),
 						c : IMG({
 							style : {
@@ -175,7 +149,7 @@ DYWedding.Gallery = CLASS({
 							},
 							src : DYWedding.R('photo/thumb/1.jpg')
 						})
-					}), image6 = A({
+					}), image4 = A({
 						style : {
 							position : 'absolute',
 							right : 80,
@@ -187,6 +161,32 @@ DYWedding.Gallery = CLASS({
 								height : 100
 							},
 							src : DYWedding.R('photo/thumb/2.jpg')
+						})
+					}), image5 = A({
+						style : {
+							position : 'absolute',
+							left : 80,
+							top : 50
+						},
+						href : DYWedding.R('photo/5.jpg'),
+						c : IMG({
+							style : {
+								height : 100
+							},
+							src : DYWedding.R('photo/thumb/5.jpg')
+						})
+					}), image6 = A({
+						style : {
+							position : 'absolute',
+							right : 80,
+							top : 50
+						},
+						href : DYWedding.R('photo/3.jpg'),
+						c : IMG({
+							style : {
+								height : 100
+							},
+							src : DYWedding.R('photo/thumb/3.jpg')
 						})
 					})]
 				}), next = A({
@@ -297,5 +297,23 @@ DYWedding.Gallery = CLASS({
 				})
 			})]
 		}));*/
+		
+		self.append(DIV({
+			style : {
+				fontSize : 16,
+				textAlign : 'center'
+			},
+			c : [
+				P({
+					style : {
+						padding : '40px 0 0 0',
+						lineHeight : '2em',
+						fontSize : 12,
+						fontFamily : 'Nanum Myeongjo'
+					},
+					c : '5월 16일 토요일 오후 1시\n홀리데이인 광주호텔 3층 (컨벤션홀)'
+				})
+			]
+		}));
 	}
 });
