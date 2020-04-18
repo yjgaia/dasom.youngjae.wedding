@@ -63,7 +63,7 @@ DYWedding.Gallery = CLASS({
 						fontSize : 16,
 						fontFamily : 'Nanum Myeongjo'
 					},
-					c : '다솜과 영재가 함께하는 여덟번째 봄,\n사랑을 약속합니다.'
+					c : '다솜과 영재가 함께하는 여덟 번째 봄,\n사랑을 약속합니다.'
 				})
 			]
 		}));
