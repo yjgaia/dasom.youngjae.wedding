@@ -85,19 +85,21 @@ DYWedding.MAIN = METHOD({
 									DYWedding.Map(),
 									DIV({
 										style : {
+											borderTop : '1px solid #fff',
+											width : 120,
+											margin : 'auto',
+											marginTop : 40
+										}
+									}),
+									DIV({
+										style : {
 											padding : '40px 40px 60px 40px',
-											color : '#3CB68A'
+											color : '#fff',
+											fontSize : 12,
+											textAlign : 'center'
 										},
-										c : DIV({
-											c : [P({
-												c : '코로나 바이러스 위험에 대비하여,\n호텔 내 방역에 더욱 신경 쓸 예정입니다.'
-											}), P({
-												style : {
-													marginTop : 10,
-													fontSize : 12
-												},
-												c : '* 넓은 좌석 배치 및 코스식 식사가 제공됩니다.'
-											})]
+										c : P({
+											c : '코로나 바이러스 예방을 위해\n호텔 내 방역에 더욱 신경 쓸 예정이며,\n넓은 좌석 배치 제공 및 코스식 식사가 제공됩니다.'
 										})
 									})
 								]
